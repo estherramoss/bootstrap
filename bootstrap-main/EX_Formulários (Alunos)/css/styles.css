@@ -1,0 +1,103 @@
+/* Definição de estilo do corpo da página */
+body {
+    background-color: #f8f8f8; /*cor de fundo*/
+}
+
+/* Estilo do formulário */
+#form-container {
+    background-color: #fff; /* cor de fundo do formulário*/
+    border-radius: 20px; /*arredondamento das bordas*/
+    box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2); /*sombra*/
+    margin: 25px auto; /*margens*/
+    padding: 25px; /*preenchimento interno*/
+}
+
+/*estilos específicos para larguras de tela maiores ou iguais a 768px*/
+@media (min-width: 768px) {
+    #form-container {
+        margin: 50px auto;
+        padding: 50px;
+    }
+}
+
+/*estilos para os cabeçalhos do formulário*/
+#form-container h2 {
+    font-weight: 900; /*peso da fonte*/
+    margin-bottom: 30px; /*margem inferior*/
+}
+
+/*estilo para os links dentro do formulário*/
+#form-container a {
+    color: #222; /*cor do texto do link*/
+    transition: .5s; /*transição suave*/
+}
+
+/*estilo para os links dentro do formulário quando hover*/
+#form-container a:hover {
+    color: #009033; /*cor do texto do link quando passar o mouse*/
+}
+
+/*estilo para o formulário em si*/
+#form-container form {
+    padding-bottom: 50px; /*preenchimento inferior*/
+}
+
+/*estilo para os campos de entrada de formulário*/
+#form-container .form-control {
+    border: none; /*sem borda*/
+    border-bottom: 1px solid #ccc; /*borda inferior*/
+    border-radius: 0; /*sem arredondamento*/
+}
+
+/*estilos para o campo de entrada quando em foco*/
+#form-container .form-control:focus {
+    box-shadow: none; /*sem sombra*/
+}
+
+/*estilo para os rótulos flutuantes*/
+#form-container .form-floating > .form-control:focus~label {
+    color: #222; /*cor do rótulo quando em foco*/
+}
+
+/*estilo para os checkboxes marcados e botão de envio do formulário*/
+#form-container .form-check-input:checked,
+#form-container input [type="submit"] {
+    background-color: #00bf57; /*cor de fundo*/
+    border-color: #00bf57; /*cor da borda*/
+}
+
+/*estilo dos botões primários*/
+.btn.btn-primary {
+    width: 100%; /*largura total*/
+}
+
+/*estilo para botão personalizado com classe "botão"*/
+.botão {
+    background-color: #00bf57 !important; /*cor de fundo do botão*/
+    border-color: #009033 !important; /*cor da borda do botao*/
+}
+
+.botao:hover {
+    background-color: #009033 !important; /*cor de fundo do botão ao passar o mouse*/
+    border-color: #009033 !important; /*cor da borda do botão ao passar o mouse*/
+}
+
+/*estilo para larguras de tela maiores ou iguais a 768*/
+@media (min-width: 768px) {
+    /*estilo para botões primários em telas grandes*/
+    .btn.btn-primary {
+        width: auto; /*largura automática*/
+    }
+}
+
+/*estilos para alinhar conteúdo verticalmente*/
+.row.alifn-items-center {
+    align-content: center; /*alinhamento vertical do conteúdo*/
+    height: 100%; /*altura total*/
+}
+
+/*estilos para o container de links*/
+#link-container {
+    text-align: center; /*alinhamento do texto ao centro*/
+    padding-top: 50px; /*preenchimento superior*/
+}
